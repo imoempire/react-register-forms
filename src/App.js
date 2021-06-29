@@ -36,7 +36,7 @@ class App extends Component {
       <div>
         <center>
           <h1>Registration forms</h1>
-          <form>
+          <form class="row g-3 needs-validation form" novalidate onSubmit={this.handleSubmit}>
             <div className="col-sm-12">
               <label for="exampleInputName" className="form-label">Firstname</label>
               <input type="text" className="form-control" name="first" aria-describedby="emailHelp" onChange={this.handleChange} value={this.first} />
@@ -53,40 +53,19 @@ class App extends Component {
               <div id="emailHelp" className="form-text">We'll never share your email with anyone else.</div>
             </div>
 
-            <div className="col-sm-12">
+            <div className="col-sm-6">
               <select value={this.state.value} onChange={this.handleChange}>
                 <option value="Male">Male</option>
                 <option value="Female">Female</option>
               </select>
             </div>
 
-            <div className="col-sm-12">
+            <div className="col-sm-6">
               <label for="exampleInputPhone1" className="form-label">Phone</label>
               <input type="text" className="form-control" name="phone" id="exampleInputPassword1" />
             </div> <br />
-            <button type="submit" className="btn btn-primary">Submit</button>
+            <button type="submit" className="btn btn-primary" >Submit</button>
           </form>
-
-          {/* <form>
-          <label htmlFor="firstName">Firstname</label>
-            <input type="text" name="first" onChange={this.handleChange} value={this.first} /> <br />
-
-          <label htmlFor="firstName">Lastname</label>
-          <input type="text" name="last" onChange={this.handleChange} value={this.last} /> <br />
-
-          <label htmlFor="firstName">Email</label>
-          <input type="email" name="email" onChange={this.handleChange} value={this.Email} /> <br />
-
-          <select value={this.state.value} onChange={this.handleChange}>
-            <option value="Male">Male</option>
-            <option value="Female">Female</option>
-          </select>
-
-          <label htmlFor="firstName">Phone</label>
-        <input type="number" name="phone" onChange={this.handleChange} value={this.phone} /> <br />
-          <button type="submit" onChange={this.handleSubmit}>submit</button>
-        </form> */}
-
         </center>
       </div>
     );
