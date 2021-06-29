@@ -1,9 +1,14 @@
-form {
-  padding: 20px;
+.form {
+  padding: 10px;
   border: 2px solid black;
   border-radius: 8px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-size: larger;
-  width: 50%;  
+  font-size: large;
+  margin: 100px 0px 0px 0px;
+  width: 70%;  
   box-shadow: 5px 10px rgba(128, 128, 128, 0.301);
+}
+.btn {
+  margin-left: 25%;
+  width: 50%;
 }
