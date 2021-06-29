@@ -54,6 +54,7 @@ class App extends Component {
             </div>
 
             <div className="col-sm-6">
+              <label htmlFor="Gender">Gender</label>
               <select value={this.state.value} onChange={this.handleChange}>
                 <option value="Male">Male</option>
                 <option value="Female">Female</option>
